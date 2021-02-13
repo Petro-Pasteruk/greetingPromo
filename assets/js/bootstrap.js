@@ -2840,7 +2840,7 @@
     };
 
     _proto._hideModal = function _hideModal() {
-      var _this8 = this;
+      let _this8 = this;
 
       this._element.style.display = 'none';
 
