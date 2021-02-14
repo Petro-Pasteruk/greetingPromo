@@ -52,7 +52,7 @@ main{
     padding-bottom: 5%;
     height: inherit;
     position: relative;
-    width: 80%;
+    width: 60%;
     border: 4px solid black;
     border-radius: 1rem;
     -webkit-box-shadow: 38px 7px 170px -4px rgba(0,0,0,0.75);
@@ -86,7 +86,7 @@ main{
 }
 
 .choose-group{
-    margin-left: 150px;
+    margin-left: 260px;
     margin-top: -3%
 }
 
@@ -99,10 +99,13 @@ main{
 }
 
 .image-item img{
-    width: 200px;
-    height: 350px
+    width: 75%;
+    height: auto
 }
 
+
+
+/* //////STARS////////// */
 .first-star{
     position: absolute;
     z-index: 999;
@@ -131,6 +134,7 @@ main{
     margin-left: 52%;
     margin-top: 30%
 }
+/* ////////////////////// */
 
 .explosion-container{
     flex: 0 0 auto;
@@ -141,12 +145,124 @@ main{
 
 .bam{
     position: absolute;
-    margin-left: 300px;
+    margin-left: 100%;
     margin-top: 500px;
 }
 
+.bam img{
+    width: 200px
+
+}
+
 .photo{
-    margin-top: 5%
+    position: sticky;
+    margin-top: 5%;
+}
+
+.hat{
+    position: absolute;
+    z-index: -1;
+    margin-left: -30%;
+    margin-top: 20%
+}
+
+
+.btnUse{
+    background-image: url('../img/btn1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 200px;
+    height: 50px;
+    border-radius: 0.5rem;
+    margin-top: -5%;
+    margin-right: 10%;
+    z-index: 999;
+}
+
+
+@media ( max-width: 2561px ){
+    .explosion-container{
+        flex: 0 0 auto;
+        margin-left: 42%;
+        margin-top: -15%;
+        z-index: 999
+    }
+
+    .second-star{
+        position: absolute;
+        z-index: 999;
+        margin-left: 20%;
+        margin-top: 0;
+    }
+    .first-star{
+        position: absolute;
+        z-index: 999;
+        margin-left: 53%;
+        margin-top: -5%
+    }
+    
+    .third-star{
+        position: absolute;
+        z-index: 999;
+        margin-left: 52%;
+        margin-top: -22%;
+        width: 50px
+    }
+    
+    .fourth-star{
+        position: absolute;
+        z-index: 999;
+        margin-left: 47%;
+        margin-top: -5%
+    }
+
+    .choose-group{
+        margin-left: 200px
+    }
+}
+
+@media ( max-width: 1440px ){
+    .second-star{
+        position: absolute;
+        z-index: 999;
+        margin-left: 5%;
+        margin-top: 0;
+    }
+
+    .first-star{
+        position: absolute;
+        z-index: 999;
+        margin-left: 53%;
+        margin-top: -30%
+    }
+    
+    .third-star{
+        position: absolute;
+        z-index: 999;
+        margin-left: 55%;
+        margin-top: -60%;
+        width: 50px
+    }
+    
+    .fourth-star{
+        position: absolute;
+        z-index: 999;
+        margin-left: 40%;
+        margin-top: -25%
+    }
+    .explosion-container{
+        flex: 0 0 auto;
+        margin-left: 35%;
+        margin-top: -30%;
+        z-index: 999
+    }
+
+    .choose-group{
+        margin-left: 190px;
+    }
 }
 
 @media( max-width: 1200px ){
@@ -154,6 +270,78 @@ main{
         height: 550px;
         width: 1000px;  
         margin-left: 4%
+    }
+
+    .bg-content-item-first{
+        width: 100px
+    }
+
+    .choose-group{
+        margin-left: 200px;
+    }
+}
+
+@media( max-width: 1024px){
+    .hat{
+        width: 200px
+    }
+
+    .bam{
+        display: none;
+    }
+
+    .explosion-container{
+        width: 50%;
+        margin-left: 35%;
+        margin-top: -42%;
+        z-index: 999
+    }
+
+    .second-star{
+        position: absolute;
+        z-index: 999;
+        margin-left: 5%;
+        margin-top: 0;
+    }
+    .first-star{
+        position: absolute;
+        z-index: 999;
+        margin-left: 50%;
+        margin-top: -35%
+    }
+    
+    .third-star{
+        position: absolute;
+        z-index: 999;
+        margin-left: 55%;
+        margin-top: -80%;
+        width: 50px
+    }
+    
+    .fourth-star{
+        position: absolute;
+        z-index: 999;
+        margin-left: 42%;
+        margin-top: -20%
+    }
+
+    .btnUse{
+        background-image: url('../img/btn1.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        width: 200px;
+        height: 50px;
+        border-radius: 0.5rem;
+        z-index: 999;
+        margin-right: -5%
+    }
+
+    .choose-group{
+        margin-left: 120px;
+        margin-top: 5%;
     }
 }
 
@@ -163,6 +351,71 @@ main{
         width: 100%;
         margin-left: 4%
     }
+
+    .choose-group{
+        margin-left: 80px;
+        margin-top: 10%;
+    }
+
+    .explosion-container{
+        width: 50%;
+        margin-left: 35%;
+        margin-top: -55%;
+        z-index: 999
+    }
+
+    .explosion-container img{
+        width: 320px
+    }
+
+    .second-star{
+        position: absolute;
+        z-index: 999;
+        margin-left: 5%;
+        margin-top: 0;
+    }
+    .first-star{
+        position: absolute;
+        z-index: 999;
+        margin-left: 47%;
+        margin-top: -30%;
+        width: 3%
+    }
+    
+    .third-star{
+        position: absolute;
+        z-index: 999;
+        margin-left: 52%;
+        margin-top: -60%;
+        width: 30px
+    }
+    
+    .fourth-star{
+        position: absolute;
+        z-index: 999;
+        margin-left: 40%;
+        margin-top: -20%;
+        width: 30px
+    }
+
+    .btnUse{
+        background-image: url('../img/btn1.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        width: 200px;
+        height: 50px;
+        border-radius: 0.5rem;
+        z-index: 999;
+        margin-right: -10%
+    }
+
+    .explosion-container img{
+        width: 80%;
+        margin-top: 40%;
+    }
 }
 
 @media( max-width: 426px ){
@@ -171,6 +424,91 @@ main{
         width: 400px;
         margin-left: 5%
     }
+
+    .mobile-align{
+        display: flex;
+        justify-content: center;
+    }
+
+    
+    .bam{
+        display: none;
+    }
+
+    .explosion-container{
+        display: none;
+    }
+
+    .bg-content-item-first{
+        margin-left: -20px;
+        margin-top: -5px
+    }
+
+    .bg-content-item-first{
+        width: 100px
+    }
+
+    .choose-group{
+        margin-left: 60px;
+        margin-top: 10%
+    }
+
+    .hat{
+        display: none;
+    }
+    .first-star{
+        display: none;
+    }
+    
+    .third-star{
+        display: none;
+    }
+    
+    .fourth-star{
+        display: none;
+    }
+
+    .btnUse{
+        background-image: url('../img/btn1.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        width: 200px;
+        height: 50px;
+        border-radius: 0.5rem;
+        z-index: 999;
+        margin: 0 auto
+    }
+}
+
+@media ( max-width: 376px ){
+    .bg-content-item-first{
+        width: 100px
+    }
+
+    .choose-group{
+        margin-left: 70px;
+    }
+
+    .bg-content{
+        width: 80%
+    }
+
+    .btnUse{
+        background-image: url('../img/btn1.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        width: 200px;
+        height: 50px;
+        border-radius: 0.5rem;
+        z-index: 999;
+        margin: 0 auto
+    }
 }
 
 @media ( max-width: 320px ){
@@ -178,14 +516,6 @@ main{
         height: 180px;
         width: 100%;
         margin-left: 5%
-    }
-
-    .bam{
-        display: none;
-    }
-
-    .explosion-container{
-        display: none;
     }
 
     main{
@@ -203,7 +533,6 @@ main{
     }
 
     .bg-content-item-first{
-        margin-left: -10px;
         margin-top: 10px;
         width: 100px
     }
@@ -218,5 +547,19 @@ main{
     .choose-group{
         margin-left: 60px;
         margin-top: 10%
+    }
+
+    .btnUse{
+        background-image: url('../img/btn1.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        width: 200px;
+        height: 50px;
+        border-radius: 0.5rem;
+        z-index: 999;
+        margin: 0 auto
     }
 }
