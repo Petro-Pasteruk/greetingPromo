@@ -1,0 +1,352 @@
+.background-second-step{
+    background-image: url('../img/facechoose-background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1280px;
+    width: 950px
+}
+
+.custom-styles-icons div img{
+    width: 150px;
+    width: 150px;
+    cursor: pointer;
+}
+
+
+.clear-right {
+    cursor: pointer;
+}
+.custom-styles-icons div{
+    width: 320px
+}
+
+.custom-styles-icons{
+    height: 900px;
+    padding-top: 17%
+}
+
+.clear-right{
+    width: 190px;
+    height: 145px;
+}
+
+.back-arrow-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: -25%;
+    width: 850px
+}
+
+.centered-mainPhoto{
+    align-items: flex-end;
+}
+
+@media ( max-width: 2560px ){
+    .back-arrow-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: -25%;
+        width: 800px
+    }
+
+    .background-second-step{
+        height: 1280px;
+        width: 700px
+    }
+}
+
+@media ( max-width: 1440px ){
+    .back-arrow-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: -15%;
+        width: 850px
+    }
+
+    .background-second-step{
+        height: 1280px;
+        width: auto
+    }
+
+    .back-arrow-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: -18%;
+        margin-bottom: -20%;
+        width: 850px;
+    }
+
+    .background-second-step{
+        height: 1280px;
+        width: auto
+    }
+
+    .custom-styles-icons div img{
+        width: 150px;
+        width: 150px;
+    }
+    
+    .custom-styles-icons div{
+        width: 300px
+    }
+    
+    .custom-styles-icons{
+        height: 890px;
+        padding-top: 15%
+    }
+
+    .next-step-img{
+        width: 60%
+    }
+
+}
+
+@media ( max-width: 1400px ){
+    .back-arrow-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: -15%;
+        width: 850px
+    }
+
+    .background-second-step{
+        height: 1280px;
+        width: auto
+    }
+
+    .back-arrow-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: -18%;
+        margin-bottom: 0;
+        width: 850px;
+    }
+
+    .background-second-step{
+        height: 1100px;
+        width: auto
+    }
+
+    .custom-styles-icons div img{
+        width: 150px;
+        width: 150px;
+    }
+    
+    .custom-styles-icons div{
+        width: 260px
+    }
+    
+    .custom-styles-icons{
+        height: 780px;
+        padding-top: 15%
+    }
+
+    .next-step-img{
+        width: 50%
+    }
+}
+
+@media ( max-width: 1024px ){
+    .back-arrow-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: -15%;
+        width: 850px
+    }
+
+    .background-second-step{
+        height: 1280px;
+        width: auto
+    }
+
+    .back-arrow-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: -12%;
+        margin-top: 35%;
+        width: 850px;
+    }
+
+    .background-second-step{
+        height: 930px;
+        width: auto
+    }
+
+    .centered-mainPhoto{
+        align-items: center;
+    }
+
+    .next-step-img{
+        width: 60%
+    }
+    
+    .custom-styles-icons{
+        height: 610px;
+        padding-top: 17%
+    }
+
+    .custom-styles-icons div{
+        width: 220px
+    }
+
+    .clear-right{
+        width: 80px;
+        height: 80px;
+    }
+
+    .custom-styles-icons div img{
+        width: 120px;
+        width: 120px;
+    }
+    
+}
+
+@media ( max-width: 768px ){
+    .next-step-img{
+        width: 60%
+    }
+
+    .custom-styles-icons div img{
+        width: 100px;
+        width: 100px;
+    }
+
+    .background-second-step{
+        height: 695px;
+        width: auto
+    }
+
+    .custom-styles-icons{
+        height: 470px;
+        padding-top: 17%
+    }
+
+    .custom-styles-icons div{
+        width: 160px
+    }
+}
+
+@media ( max-width: 426px ){
+    .next-step-img{
+        width: 65%
+    }
+
+    .custom-styles-icons div img{
+        width: 60px;
+        width: 60px;
+    }
+
+    .background-second-step{
+        height: 410px;
+        width: auto;
+        margin-left: 2% !important;
+    }
+
+    .custom-styles-icons{
+        height: 280px;
+        padding-top: 12%
+    }
+
+    .custom-styles-icons div{
+        width: 90px
+    }
+
+    .clear-right{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media ( max-width: 376px ){
+    .next-step-img{
+        width: 75%
+    }
+
+    .custom-styles-icons div img{
+        width: 50px;
+        width: 50px;
+    }
+
+    .background-second-step{
+        height: 365px;
+        width: auto;
+        margin-right: -30px;
+        margin-left: 10% !important;
+    }
+
+    .second-step{
+        display: flex;
+        justify-content: end;
+    }
+
+    .custom-styles-icons{
+        height: 250px;
+        padding-top: 15%
+    }
+
+    .custom-styles-icons div{
+        width: 80px
+    }
+
+    .clear-right{
+        width: 50px;
+        height: 50px;
+        margin-left: -20px
+    }
+}
+
+@media ( max-width: 321px ){
+    .next-step-img{
+        width: 75%
+    }
+
+    .custom-styles-icons div img{
+        width: 50px;
+        width: 50px;
+    }
+
+    .background-second-step{
+        height: 310px;
+        width: auto;
+        margin-right: 0;
+        margin-left: 8% !important;
+    }
+
+    .second-step{
+        display: flex;
+        justify-content: end;
+    }
+
+    .custom-styles-icons{
+        height: 210px;
+        padding-top: 15%
+    }
+
+    .custom-styles-icons div{
+        width: 60px
+    }
+
+    .clear-right{
+        width: 45px;
+        height: 45px;
+        margin-left: -10px
+    }
+}
+
