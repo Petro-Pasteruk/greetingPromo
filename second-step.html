@@ -34,23 +34,27 @@
                 <div class="col-6 d-flex justify-content-center centered-mainPhoto">
                     <div class="back-arrow-container">
                         <img src="./assets/img/back-arrow.png" class="clear-right img-fluid" id="toHome">
-                        <img src="" class="next-step-img img-fluid">
+                        <img src="" class="next-step-img img-fluid" id="output">
                     </div>
                 </div>
                 <div class="col-6 custom-styles-icons d-flex flex-column align-items-start justify-content-center justify-content-around">
                     <div class="camera-icon-container d-flex justify-content-center">
-                        <img src="./assets/img/camera.png" class="img-fluid">
+                        <label for="cameraImg"></label>
+                        <input type="button" class="img-fluid" id="cameraImg">
                     </div>
                     <div class="upload-icon-container d-flex justify-content-center">
-                        <img src="./assets/img/uploadIcon.png" class="img-fluid">
+                        <label for="uploadImg"></label>
+                        <input type="file" class="img-fluid" id="uploadImg" accept="image/*">
                     </div>
                 </div>
               </div>
         </div>
     </section>  
 
-    <!-- <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@miakhalifa/video/6924348358999952645" data-video-id="6924348358999952645" style="max-width: 605px;min-width: 325px;" > <section></section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script> -->
+    <canvas width="300" height="200" id='jeeFaceFilterCanvas'></canvas>
 
+
+    <!-- <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@miakhalifa/video/6924348358999952645" data-video-id="6924348358999952645" style="max-width: 605px;min-width: 325px;" > <section></section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script> -->
 </body>
 
 </html>

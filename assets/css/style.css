@@ -201,7 +201,6 @@ main{
     height: 100vh;
 }
 
-
 @media ( max-width: 2561px ){
     .explosion-container{
         flex: 0 0 auto;
@@ -213,42 +212,34 @@ main{
     .second-star{
         position: absolute;
         z-index: 999;
-        margin-left: 10%;
+        margin-left: 25%;
         margin-top: 0;
     }
     .first-star{
         position: absolute;
         z-index: 999;
-        margin-left: 55%;
-        margin-top: -55%
+        margin-left: 50%;
+        margin-top: -30%
     }
     
     .third-star{
         position: absolute;
         z-index: 999;
-        margin-left: 55%;
-        margin-top: -25%;
+        margin-left: 53%;
+        margin-top: -15%;
         width: 50px
     }
     
     .fourth-star{
         position: absolute;
         z-index: 999;
-        margin-left: 40%;
-        margin-top: -20%
+        margin-left: 45%;
+        margin-top: -12%
     }
 
     .choose-group{
         margin-left: 200px
     }
-
-    .explosion-container{
-        flex: 0 0 auto;
-        margin-left: 38%;
-        margin-top: -430px;
-        z-index: 999
-    }
-
 }
 
 @media ( max-width: 1440px ){

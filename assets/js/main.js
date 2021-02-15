@@ -4,9 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnUse = document.querySelector('.btnUse');
     const imageItems = document.querySelectorAll('.image-item img')
 
-    if( window.location.pathname == '/'){
-        btnUse.style.display = 'none'
-    }
+    btnUse.style.display = 'none'
 
 
     // FUNCTIONS
@@ -35,14 +33,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // FUNCTIONS CALLING
-    if( window.location.pathname == '/'){
-        btnUse.addEventListener('click', btnUseHander);
-        imageItems.forEach( elem => {
-            elem.addEventListener('click', imageItemHandler )
-        })
-    }else{
-        return true
-    }
+    btnUse.addEventListener('click', btnUseHander);
+    imageItems.forEach(elem => {
+        elem.addEventListener('click', imageItemHandler)
+    })
+
+
 
 })
-
