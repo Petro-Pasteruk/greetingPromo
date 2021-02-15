@@ -183,6 +183,24 @@ main{
     z-index: 999;
 }
 
+/* MODAL HOME */
+
+.background-modal-home{
+    background-image: url('../img/modal-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 938px;
+    height: 550px;
+}
+
+.modalHome{
+    position: absolute;
+    z-index: 999999;
+    width: 100%;
+    height: 100vh;
+}
+
 
 @media ( max-width: 2561px ){
     .explosion-container{
