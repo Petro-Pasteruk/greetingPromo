@@ -99,7 +99,8 @@
     font-size: 22px;
 }
 
-.btn-exit:focus {
+.btn-exit:focus,
+.takePhoto:focus {
     outline: none;
 }
 
@@ -107,15 +108,12 @@
 #photoVideo {
     display: none;
     width: 40vw;
+    border-radius: 10px;
 }
 
 #cameraImage.active,
 #photoVideo.active {
     display: block;
-}
-
-#photoVideo {
-    border-radius: 10px;
 }
 
 .takePhoto {
@@ -129,8 +127,38 @@
     transition: all .3s;
 }
 
-.takePhoto:hover {
+.takePhoto:hover,
+.savePhoto:hover,
+.resetPhoto:hover {
     opacity: 1;
+}
+
+.wrapBtnPhoto {
+    display: none;
+    justify-content: space-between;
+    margin-top: 5px;
+    width: 20%;
+}
+
+.wrapBtnPhoto.active {
+    display: flex;
+}
+
+.savePhoto {
+    border-radius: 10px;
+    background: green;
+    font-weight: 600;
+    border: 3px solid #000;
+    opacity: .8;
+    transition: all .3s;
+}
+.resetPhoto {
+    border-radius: 10px;
+    background: red;
+    font-weight: 600;
+    border: 3px solid #000;
+    opacity: .8;
+    transition: all .3s;
 }
 
 @media ( max-width: 2560px ){

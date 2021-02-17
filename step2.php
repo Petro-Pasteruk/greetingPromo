@@ -53,9 +53,13 @@
 
     <div class="modalCamera">
         <button class="btn-exit">&#65794;</button>
-        <canvas id="cameraImage"></canvas>
+        <canvas id="cameraImage" width="640" height="480"></canvas>
         <video id="photoVideo" class="active" autoplay></video>
         <button class="takePhoto">Take a Photo</button>
+        <div class="wrapBtnPhoto">
+            <button class="savePhoto">Save</button>
+            <button class="resetPhoto">Reset</button>
+        </div>
     </div>
 
     <script src="./assets/jeelizFaceFilter/dist/jeelizFaceFilter.js"></script>

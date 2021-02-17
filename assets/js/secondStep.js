@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // Open Modal
         document.querySelector(".modalCamera").classList.add("active");
 
-
         const
             canvas = document.getElementById('cameraImage'),
             context = canvas.getContext('2d'),
@@ -26,10 +25,23 @@ document.addEventListener('DOMContentLoaded', () => {
         // Trigger photo take
         document.querySelector(".takePhoto").addEventListener("click", function() {
             context.drawImage(video, 0, 0, 640, 480);
+            document.querySelector("#photoVideo").classList.remove("active");
+            document.querySelector("#cameraImage").classList.add("active");
+            document.querySelector(".wrapBtnPhoto").classList.add("active");
         });
 
 
     });
+
+    document.querySelector(".savePhoto").addEventListener("click", function () {
+
+    });
+    document.querySelector(".resetPhoto").addEventListener("click", function () {
+        document.querySelector(".wrapBtnPhoto").classList.remove("active");
+        document.querySelector("#photoVideo").classList.add("active");
+        document.querySelector("#cameraImage").classList.remove("active");
+    });
+
 
     btnCloseCamera.addEventListener("click", function () {
         document.querySelector(".modalCamera").classList.remove("active");
