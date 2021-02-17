@@ -1,43 +1,36 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     // TAKING ELEMENTS FROM DOM
-    const btnUse = document.querySelector('.btnUse');
-    const imageItems = document.querySelectorAll('.image-item img')
+    const
+        btnUse = document.querySelector('.btnUse'),
+        imageItems = document.querySelectorAll('.image-item img');
 
-    btnUse.style.display = 'none'
-
+    btnUse.style.display = 'none';
 
     // FUNCTIONS
 
     const btnUseHander = () => {
-        const expl = document.querySelector('.explosion-container')
-        expl.style.display = 'none'
+        const expl = document.querySelector('.explosion-container');
+        expl.style.display = 'none';
 
-        let preview = document.querySelector('.preview').getAttribute('src')
-        localStorage.setItem('currentImg', preview)
-
-
+        let preview = document.querySelector('.preview').getAttribute('src');
+        localStorage.setItem('currentImg', preview);
     }
 
     const imageItemHandler = e => {
-        btnUse.style.display = 'block'
-        const target = e.target
-        const imgSrc = target.attributes[0].value
-        let preview = document.querySelector('.preview')
+        btnUse.style.display = 'block';
+        const target = e.target;
+        let preview = document.querySelector('.preview');
 
-        preview.setAttribute('src', imgSrc)
+        preview.setAttribute('src', target.src);
 
-        return imgSrc
+        return target.src;
     }
-
-
 
     // FUNCTIONS CALLING
     btnUse.addEventListener('click', btnUseHander);
     imageItems.forEach(elem => {
-        elem.addEventListener('click', imageItemHandler)
+        elem.addEventListener('click', imageItemHandler);
     })
-
-
 
 })

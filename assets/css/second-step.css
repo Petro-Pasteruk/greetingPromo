@@ -44,7 +44,7 @@
     align-items: flex-end;
 }
 
-.camera-icon-container label{
+.camera-icon-container span{
     background: url('../img/camera.png');
     background-size: cover;
     background-position: center;
@@ -64,16 +64,73 @@
     cursor:pointer
 }
 
-.camera-icon-container input{
+.upload-icon-container input{
     opacity: 0;
     position: absolute;
     z-index: -1;
 }
 
-.upload-icon-container input{
-    opacity: 0;
+.modalCamera {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    background: #FFBE06;
+    padding: 30px 0 50px 0;
+    border-radius: 10px;
+    border: 3px solid #000;
+}
+
+.modalCamera.active {
+    display: flex;
+}
+
+.btn-exit {
     position: absolute;
-    z-index: -1;
+    right: 15px;
+    top: 10px;
+    background: none;
+    border: none;
+    font-size: 22px;
+}
+
+.btn-exit:focus {
+    outline: none;
+}
+
+#cameraImage,
+#photoVideo {
+    display: none;
+    width: 40vw;
+}
+
+#cameraImage.active,
+#photoVideo.active {
+    display: block;
+}
+
+#photoVideo {
+    border-radius: 10px;
+}
+
+.takePhoto {
+    margin-top: 15px;
+    border-radius: 10px;
+    background: white;
+    color: #000;
+    font-weight: 700;
+    border: 3px solid #000;
+    opacity: .8;
+    transition: all .3s;
+}
+
+.takePhoto:hover {
+    opacity: 1;
 }
 
 @media ( max-width: 2560px ){
@@ -91,12 +148,12 @@
         width: 700px
     }
 
-    .camera-icon-container label{
+    .camera-icon-container span{
         width: 150px;
         height: 150px;
     }
     
-    .upload-icon-container label{
+    .upload-icon-container span{
         width: 150px;
         height: 150px;
     }
@@ -146,7 +203,7 @@
         width: 60%
     }
 
-    .camera-icon-container label{
+    .camera-icon-container span{
         width: 150px;
         height: 150px;
     }
@@ -201,7 +258,7 @@
         width: 50%
     }
 
-    .camera-icon-container label{
+    .camera-icon-container span{
         width: 150px;
         height: 150px;
     }
@@ -268,7 +325,7 @@
         height: 80px;
     }
 
-    .camera-icon-container label{
+    .camera-icon-container span{
         width: 100px;
         height: 100px;
     }
@@ -303,7 +360,7 @@
         padding-top: 17%
     }
 
-    .camera-icon-container label{
+    .camera-icon-container span{
         width: 90px;
         height: 90px;
     }
@@ -344,7 +401,7 @@
         height: 50px;
     }
 
-    .camera-icon-container label{
+    .camera-icon-container span{
         width: 70px;
         height: 70px;
     }
@@ -392,7 +449,7 @@
         margin-left: -20px
     }
 
-    .camera-icon-container label{
+    .camera-icon-container span{
         width: 50px;
         height: 50px;
     }
@@ -435,7 +492,7 @@
         margin-left: -10px
     }
 
-    .camera-icon-container label{
+    .camera-icon-container span{
         width: 50px;
         height: 50px;
     }

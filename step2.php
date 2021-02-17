@@ -15,12 +15,10 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.rtl.min.css">
 
     <!-- script -->
-    <script src="./assets/js/secondStep.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
 
     <!-- FACEFILTERAPI -->
-    <script src="./assets/jeelizFaceFilter/dist/jeelizFaceFilter.js"></script>
 
 </head>
 
@@ -36,13 +34,12 @@
                         <a href="./">
                             <img src="./assets/img/back-arrow.png" class="clear-right img-fluid" id="toHome">
                         </a>
-                        <img src="" class="next-step-img img-fluid" id="output">
+                        <canvas width="300" height="200" id='jeeFaceFilterCanvas'></canvas>
                     </div>
                 </div>
                 <div class="col-6 custom-styles-icons d-flex flex-column align-items-start justify-content-center justify-content-around">
                     <div class="camera-icon-container d-flex justify-content-center">
-                        <label for="cameraImg"></label>
-                        <input type="file" class="img-fluid" id="cameraImg" accept="image/*;capture=camera">
+                        <span></span>
                     </div>
                     <div class="upload-icon-container d-flex justify-content-center">
                         <label for="uploadImg"></label>
@@ -51,11 +48,22 @@
                 </div>
               </div>
         </div>
-    </section>  
-
-    <canvas width="300" height="200" id='jeeFaceFilterCanvas'></canvas>
+    </section>
 
 
+    <div class="modalCamera">
+        <button class="btn-exit">&#65794;</button>
+        <canvas id="cameraImage"></canvas>
+        <video id="photoVideo" class="active" autoplay></video>
+        <button class="takePhoto">Take a Photo</button>
+    </div>
+
+    <script src="./assets/jeelizFaceFilter/dist/jeelizFaceFilter.js"></script>
+    <script src="./assets/jeelizFaceFilter/libs/gify/jdataview.js"></script>
+    <script src="./assets/jeelizFaceFilter/libs/gify/gify.min.js"></script>
+    <script src="./assets/jeelizFaceFilter/libs/gif-frames/gif-frames.min.js"></script>
+
+    <script src="./assets/js/secondStep.js"></script>
     <!-- <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@miakhalifa/video/6924348358999952645" data-video-id="6924348358999952645" style="max-width: 605px;min-width: 325px;" > <section></section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script> -->
 </body>
 
